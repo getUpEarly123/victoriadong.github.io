@@ -1,0 +1,9 @@
+body{
+	background-color:black;
+}
+.homeName{
+	text-align:center;
+	font-size:3em;
+	color:white;
+	margin-top:10%;
+}
