@@ -3,7 +3,34 @@ body{
 }
 .homeName{
 	text-align:center;
-	font-size:3em;
+	font-size:4vw;
 	color:white;
 	margin-top:10%;
 }
+.navContainer{
+	height:60%;
+	width:100%;
+	display:-webkit-flex;
+	display:flex
+}
+.navBox{
+	border-color:white;
+	border-style:solid;
+	width: 20%;
+	height:40%;
+	margin:auto;
+	color:white;
+	text-align:center;
+	font-size:1.3vw;
+}
+
+.navText{
+	margin-top:23%;
+}
+
+.navBox:hover{
+	background-color:white;
+	color:black;
+}
+
+
