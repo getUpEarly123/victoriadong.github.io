@@ -1,0 +1,39 @@
+<template name ="home">
+	
+	<div class="container">
+		<h1 class="homeName">Victoria Dong</h1>
+		
+		<div class="buttonContainer">
+			<button type="button" class="col-md-3 homebutton" data-toggle="modal" data-target="#resume">Resume</button>
+			<button type="button" class="col-md-3 homebutton" id="experience">Experience</button>
+			<button type="button" class="col-md-3 homebutton" id="projects">Projects</button>
+			<button type="button" class="col-md-3 homebutton" id="contact">Contact Me</button>
+		</div>
+		{{>resmodal}}
+	</div>
+	
+	
+</template>
+<template name="resmodal">
+	<div class="modal fade" id="resume" role="dialog">
+			<div class="modal-dialog">
+			
+				<div class= "modal-content">
+					
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">RESUME</h4>
+					</div>
+					
+					<div class="modal-body">
+						<p>my resume goes here</p>
+					</div>
+					
+					<div class="modal-footer">
+						<button type="button" class="bth bth-default" data-dismiss="modal">Close</button>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+</template>

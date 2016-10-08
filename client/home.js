@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
-import '../index.html';
+import './home.html';
 
 Template.home.events({
 	'click #experience': function(event){
