@@ -12,3 +12,6 @@ Router.route("/pro",function(){
 Router.route("/con",function(){
 	this.render("contact");
 });
+Router.route("/index.html",function(){
+	this.render("home");
+});
