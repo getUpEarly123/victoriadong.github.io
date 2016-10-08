@@ -1,3 +1,4 @@
 # victoriadong.github.io
 Victoria Dong's website
-use bootstrap package and iron:router
+use meteor js platform.
+package including bootstrap, iron:router.
