@@ -4,5 +4,13 @@
 <title>Victoria Dong</title>
 </head>
 <body>
-
+	{{>index}}
+<script>
+	Template.index.onRendered({
+		Router.go("/");
+	});
+</script>
 </body>
+<template name="index">
+
+</template>
