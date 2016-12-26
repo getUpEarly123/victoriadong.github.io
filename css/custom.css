@@ -316,6 +316,12 @@ body{
 	padding-right:5em;
 	font-size:1.7em;
 	padding-top:1em;
+	background:linear-gradient(#CAEBF2, #CAEBF2 80%,rgba(0,0,0,0));
+	
+}
+.navbar-fixed-top{
+	top:0;
+	border-width:0 0 0px;
 }
 /*align to middle*/
 .navbar-nav >li > a{
