@@ -1,0 +1,413 @@
+/******custom.CSS*****/
+/**FIXIT the space on the right might because of margin some where*****/
+
+body{
+	position:relative;
+}
+.container-fluid{
+	padding:0px;
+}
+.homeImg{
+	background-color:#CAEBF2;
+	height:100vh;
+	display:flex;
+}
+/**laptop**/
+.screen{
+	width:200px;
+	height:130px;
+	background:MidnightBlue;
+	border-radius: 0.3em;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:10px;
+}
+.screen>.cam{
+	width:9px;
+	height:9px;
+	background-color:white;
+	border-radius:4.5px;
+	margin-left:90px;
+	
+}
+.screen>.code{
+	width:180px;
+	height:110px;
+	background-color:LightGray;
+}
+.code> img{
+	width:180px;
+	height:110px;
+}
+
+#laptop>.keyboard{
+	background:MidnightBlue;
+	width:220px;
+	height:15px;
+	margin-top:1px;
+	border-bottom-left-radius:11px;
+	border-bottom-right-radius:11px;
+}
+#laptop{
+	position:relative;
+	margin-top:350px;
+	right:300px;
+}
+/***coffee mug****/
+#mug{
+	position:relative;
+	top:400px;
+	right:200px;
+	
+}
+.steam{
+	opacity:0.7;
+	position:relative;
+	top:15px;
+	right:7px;
+}
+.steam1{
+	width:30px;
+	height:25px;
+	border-radius:50%;
+	box-shadow:11px 0 0 0 white;
+}
+.steam2{
+	position:relative;
+	left:33px;
+	bottom:13px;
+	
+	width:30px;
+	height:25px;
+	border-radius:50%;
+	box-shadow:-11px 0 0 0 white;
+	margin-bottom:10px;
+	//transform:rotate(25deg);
+}
+.cup{
+	margin-left:5px;
+	height:30px;
+	width:40px;
+	background-color:white;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	
+}
+.dish{
+	width:50px;
+	height:5px;
+	background-color:white;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+/**FIX*** resize cause a lot of problem****/
+/*
+.homeImg{
+	background-image:  url("../img/skycutbottomleft.jpg");
+	width:100%;
+	height:100%;
+	background-size:100%;
+	opacity:0.95;
+	filter:grayscale(20%);
+	background-repeat:no-repeat;
+	padding: 7em;	
+}
+*/
+/****info box*****/
+.nameBox{
+	width:40vw;
+	height:auto;
+	padding:2em;
+	background-color:#ffffff;
+	opacity:0.7;
+	position:relative;
+	left:20px;
+	top:100px;
+	
+}
+/* WARNING opacity inheriance*/
+.nameBox > h2{
+	font-weight:bold;
+	font-size:3em;
+}
+.nameBox>p{
+	font-size:1.3em;
+}
+
+/**go down icon**/
+.godown{
+	margin-left:30vw;
+	margin-top:30vh;
+	
+	padding:0.5em;
+	/*border-width:0.5em;
+	border-style:solid;
+	border-radius:3em;
+	border-color:white;*/
+	width:5em;
+	height:5em;
+	position:relative;
+	top:400px;
+	right:200px;	
+}
+
+/*FIX color does not change as a whole*/
+/*hint: hover border */
+
+.godown>.glyphicon:hover,.godown:hover{
+	color:#7A6186;
+	border-color:#7A6186;
+}
+
+.godown>.glyphicon{
+	font-size:3em;
+	color:white;
+}
+/**note on the wall*/
+#note{
+	position:relative;
+	top:200px;
+	right:600px;
+}
+
+.pin{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#FF3B3F;
+	position:relative;
+	left:25px;
+	top:10px;
+}
+.paper{
+	width:70px;
+	height:90px;
+	background-color:white;
+	border-radius:5%;
+	padding:3px;
+	padding-top:15px;
+}
+.point{
+	width:5px;
+	height:5px;
+	border-radius:50%;
+	background-color:black;
+	float:left;
+	opacity:0.3;
+	
+}
+.word{
+	width:40px;
+	height:5px;
+	background-color:black;
+	margin-left:15px;
+	opacity:0.3;
+	
+}
+.line{
+	margin:7px;
+}
+/***clock********/
+/*this is acting wierd width and height**/ 
+
+#clock{
+	position:relative;
+	top:100px;
+	right:400px;
+}
+.clock{
+	width:90px;
+	height:90px;
+	background-color:white;
+	border-radius:50%;
+	border-style:solid;
+	border-color:#FF3B3F;
+	border-width:5px;	
+}
+.mid{
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background-color:MidnightBlue;
+	position:relative;
+	top:32px;
+	left:32px;
+	opacity:0.7;
+}
+.pointer1{
+	width:30px;
+	height:2px;
+	background-color:black;
+	position:relative;
+	transform:rotate(20deg);
+	top:36px;
+	left:5px;	
+}
+.pointer2{
+	width:25px;
+	height:2px;
+	background-color:black;
+	position:relative;
+	transform:rotate(-20deg);
+	top:35px;
+	left:45px;
+}
+
+/***lamp*******/
+.lamp{
+	position:relative;
+	right:450px;
+	top:210px;
+	
+}
+.bulb{
+	width:80px;
+	height:40px;
+	background-color:white;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	transform:rotate(30deg);
+	position:relative;
+	top:50px;
+	//right:250px;
+}
+.bulb2{
+	width:40px;
+	height:35px;
+	background-color:white;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	transform:rotate(30deg);
+	position:relative;
+	top:-15px;
+	left:35px;
+}
+.stick{
+	width:5px;
+	height:190px;
+	background-color:white;
+	transform:rotate(-60deg);
+	position:relative;
+	top:-80px;
+	left:130px;
+}
+.stick2{
+	width:5px;
+	height:170px;
+	background-color:white;
+	position:relative;
+	top:-170px;
+	left:170px;
+}
+.pad{
+	width:70px;
+	height:20px;
+	background-color:white;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	position:relative;
+	top:-170px;
+	left:140px;
+}
+
+/**nav **************/
+.navbar{
+	padding-right:5em;
+	font-size:1.7em;
+	padding-top:1em;
+}
+/*align to middle*/
+.navbar-nav >li > a{
+	color:gray ;
+	height:2.5em;
+	border-radius: 0.3em;
+}
+.navbar-nav>li >a:hover,.navbar-nav>li >a:focus{
+	opacity:0.5;
+	filter:grayscale(50%);
+	color:black;
+}
+
+/**education and resume****/
+.edu{
+	background-color:#CAEBF2;
+	width:100%;
+	height:100vh;
+	padding:80px;
+
+}
+.eduText{
+	color:black;
+	height:auto;
+	font-size:1.5em;
+	margin-top:5em;
+	line-height:2em;
+}
+#eduText{
+	//display:none;
+}
+.resume{
+	margin-top:5em;
+	margin-left:5em;
+	text-align:center;
+	padding:1.2em;
+	display:block;
+	background-color:#FF383F;
+	width:6em;
+	height:4em;
+	color:solid black;
+	border-radius:1.5em;
+	font-weight:bold;
+	font-size:1.5em;
+}
+#resumeBtn{
+	//display:none;
+}
+.projects{
+	background-color:#CAEBF2;
+	padding:80px;
+	
+}
+.pros{
+	display:flex;
+}
+.pro{
+	height:auto;
+	width:30vw;
+	margin:10px;
+	padding:5px;
+}
+#cApp{
+	height:30vw;
+	overflow:hidden;
+}
+
+.works{
+	width:100vw;
+	height: auto;
+	background-color:#CAEBF2;
+	padding:80px;
+}
+.work{
+	height:auto;
+}
+.work>.media-left>img {
+	width:auto;
+	height:auto;
+}
+#cu{
+	position:relative;
+	left:10px;
+}
+
+.contact{
+	height:auto;
+	background-color:#FF7F50;
+	color:white;
+	padding:10px;
+	padding-left:40px;
+	text-align:center;
+}
+
+

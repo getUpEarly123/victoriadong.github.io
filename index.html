@@ -4,247 +4,310 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+	<meta name="author" content="Qi Dong">
     <title>Victoria Dong</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!--JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    
 
 </head>
-
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header">
-               <a class="navbar-brand" href="#page-top">Qi(Victoria) Dong</a>
-			   <ul class="nav nav-tabs  navbar-right">
-					<li>
-                        <a href="#">Resume</a>
-                    </li>
-                    <li >
-                        <a href="#work">Work Experience</a>
-                    </li>
-					<li >
-                        <a href="#projects">Applied Projects</a>
-                    </li>
-                    <li >
-                        <a href="#volunteer">Volunteer Experience</a>
-                    </li>
-                    <li >
-                        <a href="#contact">Contact Me</a>
-                    </li>
-                </ul>
-				
-                
-            
-			</div>
-
+<body  >
+<div class="container-fluid">
+	<!--nav bar-->
+	<nav class="navbar navbar-fixed-top " id="nav">
+	  <ul class="nav navbar-nav navbar-right navbar-collapse" >
+		<li class="nav-item " id="nav1"><a class="nav-link " href="#edu">Education</a></li>
+		 <li class="nav-item" id="nav2"><a class="nav-link" href="#project">Projects</a></li>
+		  <li class="nav-item" id="nav3"><a class="nav-link" href="#work">Work</a></li>
+		  <li class="nav-item" id="nav4"><a class="nav-link" href="#contact">Contact</a></li>
+	  </ul>
+	</nav>
+	
+	<!--home background image and info-->
+	<div class="homeImg" id="homeImg">
+		<!--name and info box-->
+		<div id="nameBox">
+		<div class="nameBox">
+			<h3> <strong>Qi(Victoria) Dong</strong></h3>
+			<h3>Undergraduate</h3>
+			<h2>Computer Science Student<small> Co-op option</small></h2>
+			
+			<h3>Software Engineering Stream<br> Minor in Statistics</h3>
 		</div>
-    </nav>
-
-    
-    <header id="page-top">
-        <div class="container">
-            <div class="row">
-               
-                    <div class="intro-text">
-                        <span class="name">Qi(Victoria) Dong</span>
-                        
-                        <span class="description">Carleton University Computer Science Student, Coop Option </span>
-                    </div>
-                
-            </div>
-        </div>
-    </header>
+		</div>
+		
+		<!--scroll down button-->
+		<div class="godown" id="godown">
+			<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		</div>
+		
+		<!--laptop-->
+		<div id = "laptop">
+			<div class="screen">
+				<div class="cam"></div>
+				<div class="code"><img src="img/codelight.png"></img></div>
+				</div>
+			<div class="keyboard"></div>
+		</div>
+		
+		<!--mug-->
+		<div id="mug">
+			<div class="steam">
+				<div class="steam1"></div>
+				<div class="steam2"></div>
+			</div>
+			<div class="cup"></div>
+			<div class="dish"></div>
+		</div>
+		<br>
+		<div id="note">
+			<div class="pin"></div>
+			<div class="paper">
+				<div class="line">
+					<div class="point"></div>
+					<div class="word"></div>
+				</div>
+				<div class="line">
+					<div class="point"></div>
+					<div class="word"></div>
+				</div>
+				<div class="line">
+					<div class="point"></div>
+					<div class="word"></div>
+				</div>
+				<div class="line">
+					<div class="point"></div>
+					<div class="word"></div>
+				</div>
+				<div class="line">
+					<div class="point"></div>
+					<div class="word"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="clock">
+			<div class="clock">
+				<div class="pointer1"></div>
+				<div class="pointer2"></div>
+				<div class="mid"></div>
+			</div>
+		</div>
+		<!--<div id="lamp">-->
+		<div class="lamp">
+			<div class="bulb"></div>
+			<div class="bulb2"></div>
+			<div class="stick"></div>
+			<div class="stick2"></div>
+			<div class="pad"></div>
+		</div>
+		<!--</div>-->
+		
+	</div>
+	
+	<div class="edu" id="edu">
+		<div class="eduText col-md-8" id="eduText">
+			<p>
+				I am a second year undergraduate student at Carleton University doing Bachelor of  Computer Science Software Engineering Stream with Co-op Option. I also minor in Statistics. <br>
+				My current CGPA is 11.3 / 12.00 <br>
+				So far I have got University Entrance Scholarship  in Dean's Honor List (2015-2016)<br>
+				I will be on Co-op work term from May 2017 and will be available for 8 months.
+				<br>
+				I am self-motivated and excited to take challenges and get involved in cool projects. 
+			</p>		
+		</div>
+		<div class="resume col-md-4" id="resumeBtn"><p>resume</p></div>
+	</div>
+	
+	
+	
+	<div class="projects" id="project">
+		<h2> <strong> Applied Projects</strong></h2>
+		<div class="row pros">
+		
+				<div class="thumbnail pro">
+				
+					<div id = "mMg" class="carousel slide" data-ride="carousel">
+						
+						<ol class="carousel-indicators">
+							<li data-target="#mMg" data-slide-to="0" class="active"></li>
+							<li data-target="#mMg" data-slide-to="1" ></li>
+							<li data-target="#mMg" data-slide-to="2" ></li>
+							<li data-target="#mMg" data-slide-to="3" ></li>
+						</ol>
+						
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/mMg.png" alt="memory match game">
+							</div>
+							<div class="item">
+								<img src="img/mMg2.png" alt="memory match game">
+							</div>
+							<div class="item">
+								<img src="img/mMg3.png" alt="memory match game">
+							</div>
+							<div class="item">
+								<img src="img/mMg4.png" alt="memory match game">
+							</div>
+						</div>
+						
+					</div>
+					<div class="caption">
+						<h3>Memory Match Game</h3>
+						<p> Language: JavaScript, HTML, CSS</p>
+						<p> Technique: Node.js</p>
+						<p> Server: keep a users list and each user's level; randomly generate game board; keep the record of users so that they are able to keeps on playing by typing in their name at first; response 404 page when error occured </p>
+						<p>Client: use JQuery ajax to communicate with Server; perform flip animation when a card clicked; perform all basic value checking and time control with JQuery.
+						<p><a href="#" class="btn bth-primary" role="button">See in Github</a></p>
+					</div>
+				</div>
+			
+				<div class="thumbnail pro">
+					<div id = "cApp" class="carousel slide" data-ride="carousel">
+						
+						<ol class="carousel-indicators">
+							<li data-target="#cApp" data-slide-to="0" class="active"></li>
+							<li data-target="#cApp" data-slide-to="1" ></li>
+							
+						</ol>
+						
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/chat.png" alt="chat app">
+							</div>
+							<div class="item">
+								<img src="img/chat2.png" alt="chat app">
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="caption">
+						<h3>Multi User Chat App</h3>
+						<p> Language: JavaScript, HTML, CSS</p>
+						<p> Technique: Node.js, Socket.io</p>
+						<p>use Socket.io on both Client and Server side to perfom let multiple users login and able to broadcast message, send private message to a specific user and block selected user.</p>
+						<p><a href="#" class="btn bth-default" role="button">See in Github</a></p>
+					</div>
+				</div>
+				
+				<div class="thumbnail pro">
+					<div id = "maze" class="carousel slide" data-ride="carousel">
+						
+						<ol class="carousel-indicators">
+							<li data-target="#maze" data-slide-to="0" class="active"></li>
+							<li data-target="#maze" data-slide-to="1" ></li>
+							<li data-target="#maze" data-slide-to="2" ></li>
+						</ol>
+						
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/maze.png" alt="chat app">
+							</div>
+							<div class="item">
+								<img src="img/maze2.png" alt="chat app">
+							</div>
+							<div class="item">
+								<img src="img/maze3.png" alt="chat app">
+							</div>
+						</div>
+						
+					</div>
+					<div class="caption">
+						<h3>Maze Game</h3>
+						<p> Language: Python</p>
+						<p> Use SimpleGraphics.py and python keypress events to achieve the effect of walking in the maze and collecting treasures </p>
+						<p><a href="#" class="btn bth-default" role="button">See in Github</a></p>
+					</div>
+				</div>
+		
+		
+		</div>
+	</div>
+	
 
 	
-    <section id="work">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Work Experience</h2>
-                    
-                </div>
-            </div>
-			<div class="row">
-                <div class="media">
-					<div class="media-left">
-						<img src="img/cu.png" class="media-object" sytle="width:30vw">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Teaching Assistant</h4>
-						<address class="description">School of Computer Science in Carleton University, Ottawa, ON<br>
-						September 2016 - Present
-						</address>
-						
-						<p>Assisting a professor with assignment creation by checking errors, anticipating students’ workload and producing feedback in order to help the professor truly assess students’ knowledge level</p>
-						<p>Holding office hours to help students succeed in the course by guiding them to a better understanding and pushing them to think themselves</p>
-					</div>
-				</div>
+	<div class="works" id="work">
+		<h2><strong> Work Experiences</strong></h2>
+		<br>
+	
+		<div class="work media" id="cu">
+			<div class="media-left">
+				<img class="media-object" src="img/carleton.png" alt="carleton university">
 			</div>
-			<hr>
-			<div class="row">
-				<div class="media">
-					<div class="media-left">
-						<img src="img/cu.png" class="media-object" sytle="width:30vw">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Researcher</h4>
-						<address class="description">Computational Geometry Lab in Carleton University, Ottawa, ON<br>
-						June 2016 - Present
-						</address>
-						
-						<p>Writing a research paper to prove feasibility of online routing for dynamic graph in order to extend the routing problem from static graph to edge changeable graph in computational geometry</p>
-						<p>Investigating various documentations related to online routing and edge flipping problems by navigating large data base and extracting information from them to absorb more knowledge of this area and find references for the paper</p>
-					</div>
-				</div>
+			<div class="media-body">
+				<h3 class="media-heading"><strong>Teaching Assistant</strong></h3>
+				<h4>Fall 2016 	&amp; Winter 2017</h4>
+				<p>Assisting professors with assignment creation by checking errors and evaluate the difficulty level </p>
+				<p>Holding office hours to help students understand course materials and assignments</p>
+				<p> Marking and Proctoring</p>
+				<p>Holding Tutorials </p>
 			</div>
-        </div>
-    </section>
-
-    <section class="project" id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Applied Project</h2>
-                </div>
-            </div>
-			<div class="row">
-				<div class="media">
-					<div class="media-left">
-						<img src="img/todo.png" class="media-object" sytle="width:30vw">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">To-Do App</h4>
-						<address class="description">
-						Summer 2016
-						</address>
-						<p>A simple planner application that supports user login, checklists, private tasks hiding <br>
-						Utilized MongoDB collections by implementing various methods such as insert, find, update and remove to efficiently interact with data base<br>
-						Self-taught meteor accounts system, ReactiveDict, subscribing and publishing methods to expand functionality of the to-do app<br> 
-						executed a test program using test driver for Mocha JavaScript test framework to make sure the app run the way I expect</p>
-
-					</div>
-				</div>
-           
-        </div>
-    </section>
-
-    <!-- Volunteer -->
-    <section id="volunteer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Volunteer Experience</h2>
-                    
-                </div>
-            </div>
-			<div class="row">
-				<div class="media" >
-					<div class="media-left">
-						<img src="img/estaffmatch.png" class="media-object " sytle="width:30vw">
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">Software Developer</h4>
-						
-						<address class="description"><strong>Estaffmatch</strong>, 80 Aberdeen St, Ottawa, ON K1S 5R5<br>
-						Summer 2016
-						</address>
-						<p>Contributed to estaffmatch team as a Software developer using GIT including basic commiting, pulling, pushing, patch sending etc to work and communicate with other branch effectively</p>
-						<p>Programmed on both server and client side with Meteor (a JavaScript Platform also use HTML CSS and various packages such as blaze, spacebars, aldeed: tabular, monentjs: moment etc.) to fix the problems including sending automatic email, blocking specific users and efficiently interacting with MongoDB (data base)</p>
-						
-					</div>
-				</div>
+		</div>
+		
+		<div class="work media" id="cu">
+			<div class="media-left">
+				<img class="media-object" src="img/carleton.png" alt="carleton university">
 			</div>
-							
-			<div class="well" >
-				<h4 class="volunteer" >Paul Menton Center Notetaking Services for Students with Disabilities – Winter Semester Volunteer Notetaker.</h4>
-				<h5 class="volunteer">Winter 2015</h5>
+			<div class="media-body">
+				<h3 class="media-heading">Researcher</h3>
+				<h4>June-September 2016</h4>
+				<p> Investigate the world of Computational Geometry by reading various documents and papers</p>
+				<p> Concentrate on online routing and edge flipping problems</p>
+				<p> Started to write a research paper to prove a online routing algorithm on dynamic graphs</p> 
 			</div>
-			
-			<div class="well" >
-				<h4 class="volunteer" >Meet Aaron Ross event assistant(client catering and registration)</h4>
-				<h5 class="volunteer">March 2016</h5>
+		</div>
+		<br>
+		<h2><strong>Volunteer Experience</strong></h2>
+		<br>
+		<div class="work media" id="em">
+			<div class="media-left">
+				<img class="media-object" src="img/estaffmatch.png" alt="estaffmatch">
 			</div>
-			
-			<div class="well" >
-				<h4 class="volunteer" >Terry's CAUSE on Campus-volunteer (deliver food and drinks)</h4>
-				<h5 class="volunteer">August 2015</h5>
-			</div>
-			
-			
-            
-       
-    </section>
-
-    <!-- contact -->
-    <footer class="text-center" id="contact" >
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                       <h3>Contact Me!</h3> 
-					</div>
-                </div>
-						
+			<div class="media-body">
+				<h3 class="media-heading">Software Developer</h3>
+				<h4>July-September 2016</h4>
+				<p>Languages: JavaScript, HTML, CSS</p>
+				<p>Techniques: Meteor(JS platform), MongoDB, GIT</p>
+				<p>Self-taught Meteor platform and various related packages (such as blaze, spacebars, aldeed:tabular...) in order to achieve company goals</p>
+				<p>Learned GIT with the help of the supervisor to be able to contribute to company easily</p> 
 				
-				</div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-               
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
- 
-   
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
+			</div>
+		</div>
+		
+		
+		
+	</div>
+	
+	<div id="contact" >
+	<div class="contact">
+		<h1><strong>Contact Me</strong></h1>
+		<h4>Phone Number: 613-858-8218</h4>
+		<h4>Email Address: victoriadong56@gmail.com</h4>
+		<h4><a href="https://github.com/victoriadong">my github page</a></h4>
+		<h4><a href="#">Linkedin page</a></h4>
+		
+	</div>
+	</div>
+	
+	
+	
+	<!--FIX canvas is not recognized hope to achieve font color effect with it-->
+	<!--<canvas id="homeCanvas"> your browser does not support html5 canvas</canvas>-->
+	<!--FIX --- if WebGL is not supported-->
+	<script src="js/custom-ripple.js"></script>
+	<script>
+		//$(".homeImg").ripples();
+	</script>
+	<script src="js/custom.js"></script>
+</div>
 </body>
-
 </html>
