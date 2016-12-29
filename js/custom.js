@@ -1,8 +1,12 @@
 //working on transitions the last time
 $(document).ready(function(){
-	
+	$(window).resize(function(){
+		//console.log("height: ",$(window).height());
+		console.log("width: ",$(window).width());
+		
+	});
 	$(".godown, #nav1, .gly").click(function(){
-		console.log("clicked");
+
 		scrollTo("#edu");
 		eduIn();
 	});
@@ -10,6 +14,18 @@ $(document).ready(function(){
 	$("#resumeBtn").click(function(){
 		
 		$(this).append("<object src='doc/resume.rtf'><embed src='doc/resume.rtf'></embed></object>");
+	});
+	
+	$("#nav2").click(function(){
+		scrollTo("#project");
+	});
+	
+	$("#nav3").click(function(){
+		scrollTo("#work");
+	});
+	
+	$("#nav4").click(function(){
+		scrollTo("#contact");
 	});
 	
 });
@@ -98,14 +114,4 @@ function scrollTo(slt){
 			scrollTop:$(slt).offset().top
 		},500);
 }
-/*
-function eduOut(){
-	$("#resumeBtn").fadeOut(1500);
-	$("#eduText").fadeOut(1500);
-}
 
-function scrollToPos(pos){
-	$('html,body').animate({
-			scrollTop:pos
-		},500);
-}*/

@@ -155,9 +155,10 @@ body{
 	background-color:#CAEBF2;
 	border-radius:50%;
 }
-.godown>.glyphicon:hover, gly:hover{
+.godown:hover,.gly:hover{
 	color:orange;
 }
+
 
 .glyphicon{
 	font-size:3em;
@@ -309,7 +310,30 @@ body{
 	top:-170px;
 	left:140px;
 }
-
+@media(max-width: 1100px){
+	.lamp{
+		display:none;
+	}
+}
+@media(max-width:1000px){
+	#clock,#laptop,#note{
+		display:none;
+	}
+	.nameBox{
+		width:70vw;
+	}
+	#mug{
+		right:350px;
+	}
+	.godown{
+		right:600px;
+	}
+	.edu{
+		height:auto;
+	}
+	
+	
+}
 /**nav **************/
 .navbar{
 	padding-right:5em;
@@ -332,6 +356,35 @@ body{
 	opacity:0.5;
 	filter:grayscale(50%);
 	color:black;
+}
+#hamburger{
+	display:none;
+	font-size:0.5em;
+	float:right;
+}
+#navdrop{
+	float:right;
+}
+@media(max-width: 768px){
+	#hamburger{
+		display:block;
+	}
+	#wide{
+		display:none;
+	}
+	.godown{
+		right:500px;
+	}
+	
+}
+@media(max-width:550px){
+	#mug{
+		display:none;
+	}
+	.nameBox{
+		width:90vw;
+	}
+	
 }
 
 /**education and resume****/
