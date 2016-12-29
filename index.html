@@ -45,8 +45,8 @@
 		</div>
 		
 		<!--scroll down button-->
-		<div class="godown" id="godown">
-			<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		<div class="godown">
+			<span class="gly glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 		</div>
 		
 		<!--laptop-->
@@ -64,8 +64,12 @@
 				<div class="steam1"></div>
 				<div class="steam2"></div>
 			</div>
+			<div class="barwrapper">
 			<div class="cup"></div>
 			<div class="dish"></div>
+			
+			<div class="bar"></div>
+			</div>
 		</div>
 		<br>
 		<div id="note">
@@ -117,18 +121,38 @@
 		<div class="eduText col-md-8" id="eduText">
 			<p>
 				I am a second year undergraduate student at Carleton University doing Bachelor of  Computer Science Software Engineering Stream with Co-op Option. I also minor in Statistics. <br>
-				My current CGPA is 11.3 / 12.00 <br>
+				My current CGPA is 11.3 / 12.00 
 				So far I have got University Entrance Scholarship  in Dean's Honor List (2015-2016)<br>
 				I will be on Co-op work term from May 2017 and will be available for 8 months.
 				<br>
 				I am self-motivated and excited to take challenges and get involved in cool projects. 
 			</p>		
 		</div>
-		<div class="resume col-md-4" id="resumeBtn"><p>resume</p></div>
+		<!--<button type="button" class="resume col-md-4 " id="resumeBtn"data-toggle="modal" data-target="#resumeModal">resume</button>-->
+		<button type="button" class="resume col-md-4" id="resumeBtn">resume</buttton>
 	</div>
 	
-	
-	
+	<!--Modal--->
+	<!--aria-labelledby="myModalLabel"  aria-hidden="true"aria-hidden="true"-->
+	<!--
+	<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" ria-labelledby="myModalLabel"  aria-hidden="true" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<object src="doc/resume.rtf"><embed src="doc/resume.rtf"></embed></object>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
 	<div class="projects" id="project">
 		<h2> <strong> Applied Projects</strong></h2>
 		<div class="row pros">
@@ -298,15 +322,6 @@
 	</div>
 	</div>
 	
-	
-	
-	<!--FIX canvas is not recognized hope to achieve font color effect with it-->
-	<!--<canvas id="homeCanvas"> your browser does not support html5 canvas</canvas>-->
-	<!--FIX --- if WebGL is not supported-->
-	<script src="js/custom-ripple.js"></script>
-	<script>
-		//$(".homeImg").ripples();
-	</script>
 	<script src="js/custom.js"></script>
 </div>
 </body>

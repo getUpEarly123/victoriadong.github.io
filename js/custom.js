@@ -1,29 +1,19 @@
-/*window.onload=function(){
-	var c=document.getElementById("homeCanvas");
-	console.log(c);
-	var ctx =c.getContext("2d");
-	var img=document.getElementById("homeImg");
-	ctx.drawImage(img,30,30);
-};
-$(document).ready(function(){
-	
-	
-	//font color effect.
-	$(window).scroll(function(){
-		console.log($(".nav-link")[0]);
-	});
-});
-*/
-/*
 //working on transitions the last time
 $(document).ready(function(){
 	
-	$("#godown, #nav1").click(function(){
-		
+	$(".godown, #nav1, .gly").click(function(){
+		console.log("clicked");
 		scrollTo("#edu");
 		eduIn();
-	
 	});
+	
+	$("#resumeBtn").click(function(){
+		
+		$(this).append("<object src='doc/resume.rtf'><embed src='doc/resume.rtf'></embed></object>");
+	});
+	
+});
+	/*
 	//the syntax, wow~~ a lot to learn.
 	(function($){
 		var scrolled=false;
@@ -98,26 +88,24 @@ $(document).ready(function(){
 	})(jQuery);
 	
 });
-
+*/
 function eduIn(){
 	$("#resumeBtn").fadeIn(1500);
 	$("#eduText").fadeIn(1500);
-}
-function eduOut(){
-	$("#resumeBtn").fadeOut(1500);
-	$("#eduText").fadeOut(1500);
 }
 function scrollTo(slt){
 	$('html,body').animate({
 			scrollTop:$(slt).offset().top
 		},500);
 }
+/*
+function eduOut(){
+	$("#resumeBtn").fadeOut(1500);
+	$("#eduText").fadeOut(1500);
+}
+
 function scrollToPos(pos){
 	$('html,body').animate({
 			scrollTop:pos
 		},500);
 }*/
-
-$(document).ready(function(){
-	
-});

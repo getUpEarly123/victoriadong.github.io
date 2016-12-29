@@ -62,7 +62,7 @@ body{
 	
 }
 .steam{
-	opacity:0.7;
+	opacity:0.9;
 	position:relative;
 	top:15px;
 	right:7px;
@@ -89,7 +89,8 @@ body{
 	margin-left:5px;
 	height:30px;
 	width:40px;
-	background-color:white;
+	background-color:gray;
+	//opacity:0.6;
 	border-bottom-left-radius:30px;
 	border-bottom-right-radius:30px;
 	
@@ -97,23 +98,29 @@ body{
 .dish{
 	width:50px;
 	height:5px;
-	background-color:white;
+	background-color:gray;
+	//opacity:0.6;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
 }
-/**FIX*** resize cause a lot of problem****/
-/*
-.homeImg{
-	background-image:  url("../img/skycutbottomleft.jpg");
-	width:100%;
-	height:100%;
-	background-size:100%;
-	opacity:0.95;
-	filter:grayscale(20%);
-	background-repeat:no-repeat;
-	padding: 7em;	
+.barwrapper{
+	opacity:0.6;
 }
-*/
+.bar{
+	height:20px;
+	width:20px;
+	//background-color:black;
+	border-radius:50%;
+	border-width:4px;
+	border-color:gray;
+	border-style:solid;
+	background-color:rgba(0,0,0,0);
+	position:relative;
+	top:-30px;
+	left:35px;
+}
+/**FIX*** resize cause a lot of problem****/
+
 /****info box*****/
 .nameBox{
 	width:40vw;
@@ -136,33 +143,25 @@ body{
 }
 
 /**go down icon**/
+
 .godown{
-	margin-left:30vw;
-	margin-top:30vh;
-	
-	padding:0.5em;
-	/*border-width:0.5em;
-	border-style:solid;
-	border-radius:3em;
-	border-color:white;*/
-	width:5em;
-	height:5em;
+	margin-left:380px;
+	padding:0.7em;
+	height:70px;
+	width:70px;
 	position:relative;
-	top:400px;
-	right:200px;	
+	top:530px;
+	right:300px;
+	background-color:#CAEBF2;
+	border-radius:50%;
+}
+.godown>.glyphicon:hover, gly:hover{
+	color:orange;
 }
 
-/*FIX color does not change as a whole*/
-/*hint: hover border */
-
-.godown>.glyphicon:hover,.godown:hover{
-	color:#7A6186;
-	border-color:#7A6186;
-}
-
-.godown>.glyphicon{
+.glyphicon{
 	font-size:3em;
-	color:white;
+	color:gray;
 }
 /**note on the wall*/
 #note{
@@ -264,7 +263,7 @@ body{
 .bulb{
 	width:80px;
 	height:40px;
-	background-color:white;
+	background-color:#FF7F50;
 	border-top-left-radius:40px;
 	border-top-right-radius:40px;
 	transform:rotate(30deg);
@@ -275,7 +274,7 @@ body{
 .bulb2{
 	width:40px;
 	height:35px;
-	background-color:white;
+	background-color:#FF7F50;
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	transform:rotate(30deg);
@@ -286,7 +285,7 @@ body{
 .stick{
 	width:5px;
 	height:190px;
-	background-color:white;
+	background-color:#FF7F50;
 	transform:rotate(-60deg);
 	position:relative;
 	top:-80px;
@@ -295,7 +294,7 @@ body{
 .stick2{
 	width:5px;
 	height:170px;
-	background-color:white;
+	background-color:#FF7F50;
 	position:relative;
 	top:-170px;
 	left:170px;
@@ -303,7 +302,7 @@ body{
 .pad{
 	width:70px;
 	height:20px;
-	background-color:white;
+	background-color:#FF7F50;
 	border-top-left-radius:40px;
 	border-top-right-radius:40px;
 	position:relative;
@@ -409,11 +408,12 @@ body{
 
 .contact{
 	height:auto;
-	background-color:#FF7F50;
+	//background-color:#FF7F50;
 	color:white;
 	padding:10px;
 	padding-left:40px;
 	text-align:center;
+	background:linear-gradient(to top,#FF7F50,#FF7F50 90%,#CAEBF2);
 }
 
 
