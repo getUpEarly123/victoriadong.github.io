@@ -1,9 +1,15 @@
 //working on transitions the last time
 $(document).ready(function(){
+	var respos=$("#resumeBtn").position().top;
+	var eduH=$("#edu").height()+50;
 	$(window).resize(function(){
 		//console.log("height: ",$(window).height());
-		console.log("width: ",$(window).width());
-		
+		console.log("height: ",$("#edu").height());
+		console.log("position: ",$("#resumeBtn").position().top);
+		var incre=$("#resumeBtn").position().top-respos
+		if (incre>0){
+			$("#edu").height(eduH+incre);
+		}
 	});
 	$(".godown, #nav1, .gly").click(function(){
 
