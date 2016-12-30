@@ -429,17 +429,31 @@ body{
 .projects{
 	background-color:#CAEBF2;
 	padding:80px;
-	
+	height:auto;
 }
 .pros{
-	display:flex;
+
 }
 .pro{
+	width:25vw;
 	height:auto;
-	width:30vw;
+	display:inline-block;
+	vertical-align:top;
 	margin:10px;
 	padding:5px;
 }
+
+@media(max-width:1000px){
+	.pro{
+		width:38vw;
+	}
+}
+@media(max-width:875px){
+	.pro{
+		width:70vw;
+	}
+}
+
 #cApp{
 	height:30vw;
 	overflow:hidden;
