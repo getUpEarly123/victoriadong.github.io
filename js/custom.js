@@ -17,7 +17,7 @@ $(document).ready(function(){
 			$(".resume").css("margin-bottom","400px");
 		}
 	});
-	$(".godown, #nav1, .gly").click(function(){
+	$(".godown, .nav1, .gly").click(function(){
 
 		scrollTo("#edu");
 		eduIn();
@@ -28,15 +28,15 @@ $(document).ready(function(){
 		$(this).append("<object src='doc/resume.rtf'><embed src='doc/resume.rtf'></embed></object>");
 	});
 	
-	$("#nav2").click(function(){
+	$(".nav2").click(function(){
 		scrollTo("#project");
 	});
 	
-	$("#nav3").click(function(){
+	$(".nav3").click(function(){
 		scrollTo("#work");
 	});
 	
-	$("#nav4").click(function(){
+	$(".nav4").click(function(){
 		scrollTo("#contact");
 	});
 	
