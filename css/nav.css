@@ -44,7 +44,7 @@
 	font-family: 'Inconsolata', monospace;
 }
 
-@media(max-width: 500px){
+@media all and (max-width: 500px){
 	.wrap{
 		flex-wrap: wrap!important;
 	}
