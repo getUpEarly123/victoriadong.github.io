@@ -1,340 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-	<meta name="author" content="Qi Dong">
-    <title>Victoria Dong</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+	<head>
+		<!--main-->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		 <link href="css/bootstrap.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/index.js"></script>
+		
+		<!--nav-->
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<!--<script src="dog.js"></script>-->
+		
+		
+		<!--type-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src='js/jquery.keyframes.js'></script>
+		<link href="css/type.css" rel="stylesheet">
+		<script src="js/type.js"></script>
+		
+	</head>
+	<body class="container">
 	
-	<!--JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    
-
-</head>
-<body  >
-<div class="container-fluid">
-	<!--nav bar-->
+	<div id="main-type">
+		<div class="typecontainer">
+			<div class="sentence sentence1">Hi, I am Qi/Victoria</div>
+		</div>
+		
+	</div>
+	
+	<div id="main-nav" style="display:none" >
+		<script src="js/three.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		
+		<div class="wrap">
+			<a class="circle c1" href="#">About Me</a>
+			<a class="circle c2" href="#">Experience</a>
+			<a class="circle c3" href="#">Projects</a>
+			<a class="circle c4" href="#">Contact</a>
+		</div>
+				
+	</div>
+	<div class="dog" id="dog"></div>
+	
+	<div id="main-page" style="display:none">
+		<!--nav bar-->
 	<nav class="navbar navbar-fixed-top " id="nav">
-	  <ul id="wide" class="nav navbar-nav navbar-right navbar-collapse" >
-		<li class="nav-item nav1"><a class="nav-link " href="#edu">Education</a></li>
-		 <li class="nav-item nav2"><a class="nav-link" href="#project">Projects</a></li>
-		  <li class="nav-item nav3"><a class="nav-link" href="#work">Work</a></li>
-		  <li class="nav-item nav4"><a class="nav-link" href="#contact">Contact</a></li>
+		<!--one posible solution is to write multiple versions and display one at a time-->
+		<svg class="navbar-inner brand name1" >
+		<path fill="#f1f1f1" stroke="#000000" stroke-width="5" d="
+		M0,0 L15,40 L30,0
+		L35,0 L35,40 L65,40
+		C35,40 35,0 65,0
+		L100,0 L100,7 L80,7 L80,40
+		L120,40 C100,40 100,0 120,0 C140,0 140,40 120,40
+		L145,40 L145,0 C175,0 175,20 145,20 L175,40
+		L175,0 L185,0 L185,40
+		L215,30 C 185,40 185,0 220,0 L220,43
+		"/></svg>
+		<svg class="navbar-inner brand name2" >
+		<path fill="#f1f1f1" stroke="#000000" stroke-width="5" d="
+		M0,0 L10,35 L25,0
+		L30,0 L30,35 L60,35
+		C30,35 30,0 60,0
+		L95,0 L95,2 L75,2 L75,35
+		L115,35 C95,35 95,0 115,0 C135,0 135,35 115,35
+		L140,35 L140,0 C170,0 170,15 140,15 L170,35
+		L170,0 L180,0 L180,35
+		L210,25 C 180,35 180,0 215,0 L215,37
+		"/></svg>
+		<svg class="navbar-inner brand name3" >
+		<path fill="#f1f1f1" stroke="#000000" stroke-width="5" d="
+		M0,0 L10,30 L20,0
+		L25,0 L25,30 L55,30
+		C25,30 25,0 55,0
+		L90,0 L90,0 L70,0 L70,30
+		L110,30 C90,30 90,0 110,0 C130,0 130,30 110,30
+		L135,30 L135,0 C165,0 165,10 135,10 L165,30
+		L165,0 L175,0 L175,30
+		L205,20 C 175,30 175,0 210,0 L210,32
+		"/></svg>
+		
+	  <ul id ="navbar-wide" class="nav navbar-nav navbar-right navbar-collapse" >
+		<li class="nav-item nav1 nav-about"><a class="nav-link " href="#">About</a></li>
+		 <li class="nav-item nav2 nav-exp"><a class="nav-link" href="#">Experience</a></li>
+		  <li class="nav-item nav3 nav-proj"><a class="nav-link" href="#">Projects</a></li>
+		  <li class="nav-item nav4 nav-contact"><a class="nav-link" href="#">Contact</a></li>
 	  </ul>
-	  <div class="dropdown" id="hamburger">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-align-justify"></span></a>
-		<ul class="dropdown-menu" id="navdrop">
-			<li class ="nav1"><a href="#edu">Education</a></li>
-			<li class="nav2"><a href="#project">Projects</a></li>
-			<li class="nav3"><a href="#work">Work</a></li>
-			<li class="nav4"><a href="#contact">Contact</a></li>
-		</ul>
-	  </div>
+	  <!-- to fix-->
+	  <div id="hamburger">
+		<a href="#">
+			<div class="burger-wrapper">
+				<span class="burger glyphicon glyphicon-menu-hamburger"></span>
+			</div>
+		</a>
+	  </div>	  
 	</nav>
-	
-	<!--home background image and info-->
-	<div class="homeImg" id="homeImg">
-		<!--name and info box-->
-		<div id="nameBox">
-		<div class="nameBox">
-			<h3> <strong>Qi(Victoria) Dong</strong></h3>
-			<h3>Undergraduate</h3>
-			<h2>Computer Science Student<small> Co-op option</small></h2>
-			
-			<h3>Software Engineering Stream<br> Minor in Statistics</h3>
-		</div>
-		</div>
 		
-		<!--scroll down button-->
-		<div class="godown">
-			<span class="gly glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-		</div>
-		
-		<!--laptop-->
-		<div id = "laptop">
-			<div class="screen">
-				<div class="cam"></div>
-				<div class="code"><img src="img/codelight.png"></img></div>
-				</div>
-			<div class="keyboard"></div>
-		</div>
-		
-		<!--mug-->
-		<div id="mug">
-			<div class="steam">
-				<div class="steam1"></div>
-				<div class="steam2"></div>
-			</div>
-			<div class="barwrapper">
-			<div class="cup"></div>
-			<div class="dish"></div>
-			
-			<div class="bar"></div>
-			</div>
-		</div>
-		<br>
-		<div id="note">
-			<div class="pin"></div>
-			<div class="paper">
-				<div class="line">
-					<div class="point"></div>
-					<div class="word"></div>
-				</div>
-				<div class="line">
-					<div class="point"></div>
-					<div class="word"></div>
-				</div>
-				<div class="line">
-					<div class="point"></div>
-					<div class="word"></div>
-				</div>
-				<div class="line">
-					<div class="point"></div>
-					<div class="word"></div>
-				</div>
-				<div class="line">
-					<div class="point"></div>
-					<div class="word"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="clock">
-			<div class="clock">
-				<div class="pointer1"></div>
-				<div class="pointer2"></div>
-				<div class="mid"></div>
-			</div>
-		</div>
-		<!--<div id="lamp">-->
-		<div class="lamp">
-			<div class="bulb"></div>
-			<div class="bulb2"></div>
-			<div class="stick"></div>
-			<div class="stick2"></div>
-			<div class="pad"></div>
-		</div>
-		<!--</div>-->
-		
-	</div>
-	
-	<div class="edu" id="edu">
-		<div class="eduText col-md-8" id="eduText">
-			<p>
-				I am a second year undergraduate student at Carleton University doing Bachelor of  Computer Science Software Engineering Stream with Co-op Option. I also minor in Statistics. <br>
-				My current CGPA is 11.3 / 12.00 
-				So far I have got University Entrance Scholarship  in Dean's Honor List (2015-2016)<br>
-				I will be on Co-op work term from May 2017 and will be available for 8 months.
-				<br>
-				I am self-motivated and excited to take challenges and get involved in cool projects. 
-			</p>		
-		</div>
-		<!--<button type="button" class="resume col-md-4 " id="resumeBtn"data-toggle="modal" data-target="#resumeModal">resume</button>-->
-		<button type="button" class="resume " id="resumeBtn">resume</buttton>
-	</div>
-	
-	
-	<div class="projects" id="project">
-		<h2 class="protext"> <strong> Applied Projects</strong></h2>
-		<div class="row pros">
-		
-				<div class="thumbnail pro">
+		<div class="content" id="about">
+			<div class="profile-wrap"><div class="profile"><img src="img/profile.jpg" alt="can't display profile"/></div></div>
+			<div class="ab-co">
+				<h2><strong>Victoria(Qi) Dong</strong></h2>
 				
-					<div id = "mMg" class="carousel slide" data-ride="carousel">
-						
-						<ol class="carousel-indicators">
-							<li data-target="#mMg" data-slide-to="0" class="active"></li>
-							<li data-target="#mMg" data-slide-to="1" ></li>
-							<li data-target="#mMg" data-slide-to="2" ></li>
-							<li data-target="#mMg" data-slide-to="3" ></li>
-						</ol>
-						
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="img/mMg.PNG" alt="memory match game">
-							</div>
-							<div class="item">
-								<img src="img/mMg2.PNG" alt="memory match game">
-							</div>
-							<div class="item">
-								<img src="img/mMg3.PNG" alt="memory match game">
-							</div>
-							<div class="item">
-								<img src="img/mMg4.PNG" alt="memory match game">
-							</div>
-						</div>
-						
-					</div>
-					<div class="caption">
-						<h3>Memory Match Game</h3>
-						<p> Language: JavaScript, HTML, CSS</p>
-						<p> Technique: Node.js, AJAX</p>
-						<p> Server: keep a users list and each user's level; randomly generate game board; keep the record of users so that they are able to keeps on playing by typing in their name at first; response 404 page when error occured </p>
-						<p>Client: use JQuery ajax to communicate with Server; perform flip animation when a card clicked; perform all basic value checking and time control with JQuery.
-						<p><a href="#" class="btn bth-primary" role="button">See in Github</a></p>
+				<div class="ab-des">
+					<br>
+					Bachelor of Computer Science Student, Software Engineer Stream<br> 
+					Minor in Statistics, Third Year Standing at Carleton University<br>
+					<br>
+					Major CGPA: 11.90/12  &nbsp;&nbsp;&nbsp;Overall CGPA: 11.65/12
+					2015-2017 Dean's list				
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="content" id="exp">
+			<div class="exp-co">
+				<div class="exp-time"><strong>2017 May - Current</strong></div>
+				<div class="exp-content img">
+				<img src="img/ericsson.png"/>  &nbsp;Ericsson Canada Inc. LTE Automation Testing Co-op
+					<div class="exp-des">
+						<ul>
+							<li>LTE Layer 2 Layer 3 signalling traces, Integration testing, Feature verification testing</li>
+							<li>Qualcomm model User Equipment troubleshooting</li>
+							<li>Cobham UE simulator(Areoflex) for capacity testing</li>
+						</ul>
 					</div>
 				</div>
-			
-				<div class="thumbnail pro">
-					<div id = "cApp" class="carousel slide" data-ride="carousel">
-						
-						<ol class="carousel-indicators">
-							<li data-target="#cApp" data-slide-to="0" class="active"></li>
-							<li data-target="#cApp" data-slide-to="1" ></li>
+			</div>
+			<div class="exp-co">
+				<div class="exp-time"><strong>2016 Fall - 2017 Winter</strong></div>
+				<div class="exp-content img">
+				<img src="img/carleton.png"/> &nbsp;Carleton University Teaching Assistant
+					<div class="exp-des">
+						<ul>
+							<li>Assist assignment preparation and error checking.
+							<li>Holding tutorials(40+ students), one-to-one Office hours, 
+							<li>Marking, Proctoring</li>
 							
-						</ol>
-						
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="img/chat.PNG" alt="chat app">
-							</div>
-							<div class="item">
-								<img src="img/chat2.PNG" alt="chat app">
-							</div>
-							
-						</div>
-						
+						</ul>
 					</div>
-					<div class="caption">
-						<h3>Multi User Chat App</h3>
-						<p> Language: JavaScript, HTML, CSS</p>
-						<p> Technique: Node.js, Socket.io</p>
-						<p>use Socket.io on both Client and Server side to perfom let multiple users login and able to broadcast message, send private message to a specific user and block selected user.</p>
-						<p><a href="#" class="btn bth-default" role="button">See in Github</a></p>
+				</div>
+			</div>
+			<div class="exp-co">
+				<div class="exp-time"><strong>2016 Summer</strong></div>
+				<div class="exp-content img">
+				<img src="img/estaffmatch.jpg"/> &nbsp;Estaffmatch Meteor App Developer (volunteer)
+					<div class="exp-des">
+						<ul>
+							
+							<li>MongoDB, GIT, Session Management, User Accounts,  </li>
+							<li>Backbone.js Underscore.js, Atmosphere packages, Blaze template engine</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="exp-co">
+				<div class="exp-time"><strong>2016 Summer</strong></div>
+				<div class="exp-content img">
+				<img src="img/carleton.png"/> &nbsp;Carleton University Research
+					<div class="exp-des">
+						<ul>
+							<li>Computational Geometry</li>
+							<li>Study feasibility of online routing for dynamic graphs and come up with an algorithm to solve the routing problem related to edge changeable graph.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+		
+		<div id="proj" >
+			<div class="proj" id="chat-video">
+				
+				<video class="proj-left proj-video" controls>
+					<source src="video/chatApp.webm" type="video/webm">
+					Your browser does not support the video tag.
+				</video>
+				<div class="chat-x" aria-label="Close">
+					<a href="#">
+					<span>&times;</span>
+					</a>
+				</div>
+				<div class="proj-content" id="chat-body">
+					<h3 > MEAN Chat App</h3>
+					<h5><strong> MongoDB - Express.js - Angular.js - Node.js </strong></h5>
+					<div class="proj-des">
+					<ul>
+					<li><strong>Mongoose</strong> for MongoDB modeling and CRUD operations</li>
+					<li><strong>Socket.io</strong> to get real time chat feature between clients.</li>
+					<li><strong>Express router</strong> for backend routing. <strong>Angular stateProvider </strong>for frontend routing</li>
+					<li><strong>Angular ui-view</strong> for partial templates "friend list" and "user list" in chat room</li>
+					<li><strong>Angular directives</strong> for navigation bar</li>
+					<li>User Signup Signin System using <strong>Passport.js </strong>with <strong>CSRF</strong> protection.</li>
+					<li><strong>bcrypt</strong> to hash and compare user password</li>
+					<li><strong>Nodemailer</strong> for email service.</li>
+					<li><strong>CSRF tokens </strong>for account verification</li>
+					<li><strong>Bootstrap Theme</strong> for styling.</li>
+					</ul>
+					
+					</div>
+				</div>
+			</div>
+			
+			<div class="proj" >
+				
+				<div class="proj-left" >
+					<div id = "store" class="carousel slide" data-ride="carousel" data-interval="false">
+						<ol class="carousel-indicators">
+							<li data-target="#store" data-slide-to="0" class="active"></li>
+							<li data-target="#store" data-slide-to="1" ></li>
+							<li data-target="#store" data-slide-to="2" ></li>
+							<li data-target="#store" data-slide-to="3" ></li>
+							<li data-target="#store" data-slide-to="4" ></li>
+						</ol>
+						<div class="carousel-inner " role="listbox">
+							<div class="item active store-left">
+								<img src="img/store0.PNG" alt="C++ grocery store">
+							</div>
+							<div class="item store-left">
+								<img src="img/store1.PNG" alt="C++ grocery store">
+							</div>
+							<div class="item store-left">
+								<img src="img/store2.PNG" alt="C++ grocery store">
+							</div>
+							<div class="item store-left">
+								<img src="img/store3.PNG" alt="C++ grocery store">
+							</div>
+							<div class="item store-left">
+								<img src="img/store4.PNG" alt="C++ grocery store">
+							</div>
+						</div>
 					</div>
 				</div>
 				
-				<div class="thumbnail pro">
-					<div id = "maze" class="carousel slide" data-ride="carousel">
-						
-						<ol class="carousel-indicators">
-							<li data-target="#maze" data-slide-to="0" class="active"></li>
-							<li data-target="#maze" data-slide-to="1" ></li>
-							<li data-target="#maze" data-slide-to="2" ></li>
-						</ol>
-						
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="img/maze.PNG" alt="maze ">
-							</div>
-							<div class="item">
-								<img src="img/maze2.png" alt="maze">
-							</div>
-							<div class="item">
-								<img src="img/maze3.PNG" alt="maze">
-							</div>
-						</div>
-						
-					</div>
-					<div class="caption">
-						<h3>Maze Game</h3>
-						<p> Language: Python</p>
-						<p> Use SimpleGraphics.py and python keypress events to achieve the effect of walking in the maze and collecting treasures </p>
-						<p><a href="#" class="btn bth-default" role="button">See in Github</a></p>
+				<div class="proj-content">
+					<h3 > C++ Grocery Store</h3>
+					<h6>Group Project: Victoria Dong and Allison Kuhl</h6>
+					<div class="proj-des">
+						<ul>
+						<li><strong>Object Oriented Programming</strong></li>
+						<li><strong>Fasade Design Pattern</strong>. Products and Customers are separated by Store and Inventary Control Classes.</li>
+						<li><strong>Virtual Inheritance </strong>is used to slove "dreaded diamond" problem caused by multiple inheritance nature of product classes.</li>
+						<li>Products, Customers and OrderArray are <strong>dynamically allocated</strong></li>
+						<li>DateTime class <strong>overloaded operators</strong> +, +=, -, -=</li>
+						<li>Product List is implemented as a <strong>Doubly linked list </strong>and sorted on number of units.</li>
+						<li>Products classes and Order classes <strong>overloaded stream operator &lt;&lt;, &gt;&gt; </strong>for customized printing.</li>
+						</ul>
 					</div>
 				</div>
+			</div>
+			
+			<div class="proj" >
 				
-				<div class="thumbnail pro">
-					<div id = "cChat" class="carousel slide" data-ride="carousel">
-						
+				<div class="proj-left" >
+					<div id="sysManager" class="carousel slide" data-ride="carousel" data-interval="false">
 						<ol class="carousel-indicators">
-							<li data-target="#cChat" data-slide-to="0" class="active"></li>
+							<li data-target="#sysManager" data-slide-to="0" class="active"></li>
+							<li data-target="#sysManager" data-slide-to="1" ></li>
+							<li data-target="#sysManager" data-slide-to="2" ></li>
+						</ol>
+						<div class="carousel-inner " role="listbox">
+							<div class="item active store-left">
+								<img src="img/sysmanager0.PNG" alt="system resource manager">
+							</div>
+							<div class="item store-left">
+								<img src="img/sysmanager1.PNG" alt="system resource manager">
+							</div>
+							<div class="item store-left">
+								<img src="img/sysmanager2.PNG" alt="system resource manager">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="proj-content">
+					<h3 >System Resource Manager</h3>
+					<h6>Group Project: Victoria Dong and Allison Kuhl</h6>
+					<div class="proj-des">
+						<ul>
+							<li>Language: <strong>C</strong></li>
+							<li>report user on the five processes which take up the most cpu usage in a given period, and the files that are very large or very old and can therefore be eliminated.</li>
+							<li><strong>workqueue module </strong>constantly pulling information about processes from the <strong>kernel</strong>.</li>
+							<li>prcesses reports are written to <strong>device driver</strong> and can be read from user space when needed.
+							<li><strong>netlinks</strong> to communicate between the user and the kernel.</li>
+							<li>periodically go through all files, sorts them based on their metadata extracted from <strong>inodes</strong> and store them using <strong>hardlink</strong> in our application directory. </li>
+							<li>by <strong>extending file attributes</strong> this tagging system allows users to create their own semantically rich file system that stores files by tags. </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="proj" >
+				
+				<div class="proj-left" >
+					<div id="cdTree" class="carousel slide" data-ride="carousel">
+					
+						<ol class="carousel-indicators">
+							<li data-target="#cdTree" data-slide-to="0" class="active"></li>
+							<!--<li data-target="#cdTree" data-slide-to="1" ></li>-->
+						
 						</ol>
 						
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="img/cSocket.png" alt="cChat ">
+						<div class="carousel-inner " role="listbox">
+							<div class="item active store-left">
+								<img src="img/cdTree0.PNG" alt="Countdown Three">
 							</div>
-							
+							<!--<div class="item store-left">
+								<img src="sysmanager1.PNG" alt="Countdown Three">
+							</div>-->
 						</div>
 						
-					</div>
-					<div class="caption">
-						<h3>Multi Host Chat</h3>
-						<p> Language: C</p>
-						<p> Techinique: Socket</p>
-						<p> Use C libraries to achieve sending message between different terminals or different hosts. </p>
+						
 						
 					</div>
 				</div>
-		
+				<div class="proj-content">
+					<h3 >Countdown Three</h3>
+					<div class="proj-des">
+						<ul>
+							<li>Language: <strong>Java</strong></li>
+							<li>Countdown Tree is a <strong>balanced binary search tree </strong>that uses <strong>partial rebuilding</strong></li>
+							<li>It <strong>inherit BinarySearchThree</strong> and <strong>implement SortedSet interface</strong>.
+							<li>Each node in Countdown Tree has an countdown timer when the node's timer reaches 0, the node explodes and the entire subtree rooted at this node rebuilt to a balanced binary search tree.</li>
+							<li><strong>Add and remove</strong> operation works the same as binary search tree. Timer decreased by one (if add) or increase by one (if removed) on all nodes that are on the path of this node to root.</li>
+						</ul>
+					</div>
+				</div>
+			
+			
+			</div>
+			
 		</div>
-	</div>
 	
 
-	
-	<div class="works" id="work">
-		<h2><strong> Work Experiences</strong></h2>
-		<br>
-	
-		<div class="work media" id="cu">
-			<div class="media-left">
-				<img class="media-object" src="img/carleton.png" alt="carleton university">
+		<div class="content" id="contact">
+			<div class="hireme">Hire Me!</div>
+			<div class="ab-des">
+			Message Me through <a href="http://www.linkedin.com/in/qi-victoria-dong-3a5b47126" target="_blank">Linkedin</a><br>
+			
+			Email: victoria.dong.hello@gmail.com 
 			</div>
-			<div class="media-body">
-				<h3 class="media-heading"><strong>Teaching Assistant</strong></h3>
-				<h4>Fall 2016 	&amp; Winter 2017</h4>
-				<p>Assisting professors with assignment creation by checking errors and evaluate the difficulty level </p>
-				<p>Holding office hours to help students understand course materials and assignments</p>
-				<p> Marking and Proctoring</p>
-				<p>Holding Tutorials </p>
+			<div class="contact-available">
+				 Available as Co-op: <br>
+				 May 1 - August 31 2018 <br>
+				 May 1 - December 31 2019 <br>
 			</div>
 		</div>
 		
-		<div class="work media" id="cu">
-			<div class="media-left">
-				<img class="media-object" src="img/carleton.png" alt="carleton university">
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Researcher</h3>
-				<h4>June-September 2016</h4>
-				<p> Investigate the world of Computational Geometry by reading various documents and papers</p>
-				<p> Concentrate on online routing and edge flipping problems</p>
-				<p> Started to write a research paper to prove a online routing algorithm on dynamic graphs</p> 
-			</div>
-		</div>
-		<br>
-		<h2><strong>Volunteer Experience</strong></h2>
-		<br>
-		<div class="work media" id="em">
-			<div class="media-left">
-				<img class="media-object" src="img/estaffmatch.png" alt="estaffmatch">
-			</div>
-			<div class="media-body">
-				<h3 class="media-heading">Software Developer</h3>
-				<h4>July-September 2016</h4>
-				<p>Languages: JavaScript, HTML, CSS</p>
-				<p>Techniques: Meteor(JS platform), MongoDB, GIT</p>
-				<p>Self-taught Meteor platform and various related packages (such as blaze, spacebars, aldeed:tabular...) in order to achieve company goals</p>
-				<p>Learned GIT with the help of the supervisor to be able to contribute to company easily</p> 
-				
-			</div>
-		</div>
-		
-		
-		
 	</div>
-	
-	<div id="contact" >
-	<div class="contact">
-		<h1><strong>Contact Me</strong></h1>
-		<h4>Phone Number: 613-858-8218</h4>
-		<h4>Email Address: victoriadong56@gmail.com</h4>
-		<h4><a href="https://github.com/victoriadong">my github page</a></h4>
-		<h4><a href="#">Linkedin page</a></h4>
-		
-	</div>
-	</div>
-	
-	<script src="js/custom.js"></script>
-</div>
-</body>
+		<ul class="dropdown">
+			
+			<li class="nav-about"><a href="#">About</a></li>
+			<li class="nav-exp"><a href="#">Experience</a></li>
+			<li class="nav-proj"><a href="#">Projects</a></li>
+			<li class="nav-contact"><a href="#">Contact</a></li>
+		</ul>
+	</body>
 </html>

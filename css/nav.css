@@ -1,0 +1,99 @@
+.container{
+	display:flex;
+	height:100%;
+	width:100%;
+	background-color:#f1f1f1;
+	position: absolute;
+	justify-content:center;
+	padding:0;
+	margin:0;
+	top:0;
+	left:0;	
+}
+.wrap{
+	display: flex;
+	height: 50vh;
+	width:100vw;
+	flex-direction:row nowrap;
+	justify-content: center;
+	position: absolute;
+	padding:0;
+	margin:0;
+	top:0;
+	left:0;	
+}
+.dog{
+	
+	margin-top:65vh;
+
+	height:auto;
+	width:auto;
+	
+}
+.circle{
+	width: 18vw;
+	height: 18vw;
+	line-height:7.5vw;
+	background: white;
+	text-align: center;
+	border-radius: 60%;
+	margin: 2vw;
+	animation-name: fadeInUp;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	line-height: 18vw;
+	font-family: 'Inconsolata', monospace;
+}
+
+@media(max-width: 500px){
+	.wrap{
+		flex-wrap: wrap!important;
+	}
+	.circle{
+		width:33vw;
+		height:33vw;
+		line-height:33vw;
+	}
+	.wrap a{
+		font-size:5.6vw!important;
+	}
+}
+.wrap a{
+	text-decoration:none;
+	font-size: 2.7vw;
+	font-weight:bold;
+	color: black;
+}
+.c3,.c1{
+
+	animation-duration:1s;
+	animation-fill-mode:both;
+}
+.c4,.c2{
+	
+	animation-duration:1s;
+	animation-fill-mode:both;
+	animation-delay:0.2s;
+}
+
+@keyframes fadeInUp{
+	0%{
+		opacity:0;
+		transform: translateY(40vh);
+	}
+	50%{
+		opacity:0.8;
+		transform: translateY(10vh);
+		
+	}
+	
+	75%{
+		opacity:0.9;
+		transform: translateY(14vh);
+		
+	}	
+	100%{
+		opacity:1;
+		transform:translateY(13vh);
+	}
+	
+}
