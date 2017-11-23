@@ -20,7 +20,7 @@
 .name3{
 	display:none;
 }
-@media all and (max-aspect-ratio: 1/1){
+@media all and (max-aspect-ratio: 3/2){
 /*@media  all and  (max-width: 830px){*/
 	.name1{
 		display:none;
@@ -32,7 +32,7 @@
 		display:none;
 	}
 }
-@media all and (max-aspect-ratio: 2/3){
+@media all and (max-aspect-ratio: 1/1){
 /*@media  all and (max-width: 600px){*/
 	.name1{
 		display:none;
@@ -45,7 +45,7 @@
 	}
 }
 
-@media all and (max-aspect-ratio: 1/2){
+@media all and (max-aspect-ratio: 2/3){
 /*@media all and  (max-width: 450px){*/
 	.name1{
 		display:none;
@@ -155,8 +155,8 @@
 	text-decoration:none;
 }
 
-
-@media  all and (max-width: 830px){
+@media all and (max-aspect-ratio: 1/1){
+/*@media  all and (max-width: 830px){*/
 	#hamburger{
 		display:block;
 	}

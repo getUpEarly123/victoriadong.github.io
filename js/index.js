@@ -111,7 +111,8 @@ $(document).ready(function(){
 		maxH("#sysManager");
 		maxH("#cdTree");
 		
-		if($(window).width()>830){
+		//if($(window).width()>830){
+		if ($(window).width()/$(window).height() <1){
 			$("#about").removeClass("transform");
 			$("#exp").removeClass("transform");
 			$("#contact").removeClass("transform");
@@ -132,7 +133,8 @@ $(document).ready(function(){
 
 	
 	$("video")[0].onplay = function(){
-		if ($(window).width()>830){
+		//if ($(window).width()>830){
+		if ($(window).width()/$(window).height() >1){
 			console.log($(window).width());
 			console.log("video clicked");
 			console.log($("#chat-body").css("display"));
@@ -143,7 +145,8 @@ $(document).ready(function(){
 		}
 	}
 	$(".chat-x").click(function(){
-		if ($(window).width()>830){
+	//	if ($(window).width()>830){
+		if ($(window).width()/$(window).height() >1){
 			$("video")[0].pause();
 		
 			$("#chat-body").css("display","block");
