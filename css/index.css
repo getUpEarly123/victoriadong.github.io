@@ -31,6 +31,7 @@
 		display:none;
 	}
 }
+/*
 @media  (max-width: 830px){
 	.name1{
 		display:none;
@@ -42,6 +43,7 @@
 		display:none;
 	}
 }
+*/
 @media only screen and (max-width: 600px){
 	.name1{
 		display:none;
@@ -53,6 +55,7 @@
 		display:display;
 	}
 }
+/*
 @media (max-width: 600px){
 	.name1{
 		display:none;
@@ -64,6 +67,7 @@
 		display:display;
 	}
 }
+*/
 @media  only screen and (max-width: 450px){
 	.name1{
 		display:none;
@@ -75,6 +79,7 @@
 		display:none;
 	}
 }
+/*
 @media (max-width: 450px){
 	.name1{
 		display:none;
@@ -86,6 +91,7 @@
 		display:none;
 	}
 }
+*/
 /**nav **************/
 .navbar{
 	padding-right:3.5em;
@@ -191,6 +197,7 @@
 		display:none;
 	}	
 }
+/*
 @media (max-width: 830px){
 	#hamburger{
 		display:block;
@@ -199,7 +206,7 @@
 		display:none;
 	}	
 }
-
+*/
 
 .content{
 	background-color:white;
@@ -251,12 +258,13 @@
 		font-size:2.7vw;	
 	}
 }
-
+/*
 @media (max-width: 830px){
 	.ab-des{
 		font-size:2.7vw;	
 	}
 }
+*/
 .transform{
 		transform: rotate(-10deg);
 		transition: all 1s;
@@ -301,7 +309,7 @@
 	}
 	
 }
-
+/*
 @media (max-width: 830px){
 	.dropdown{
 		display:block;
@@ -331,7 +339,7 @@
 	}
 	
 }
-
+*/
 /**need to change height when add/remove exp-co**/
 /***exp******/
 #exp{
@@ -387,7 +395,7 @@
 		font-size:3vw!important;
 	}
 }
-
+/*
 @media (max-width: 450px){
 	.exp-co{
 		height:30vh;
@@ -403,7 +411,7 @@
 		font-size:3vw!important;
 	}
 }
-
+*/
 @media  only screen and(max-width: 830px){
 	.proj{
 		width:90vw !important;
@@ -432,7 +440,7 @@
 		font-size:2.1vw;
 	}
 }
-
+/*
 @media  (max-width: 830px){
 	.proj{
 		width:90vw !important;
@@ -461,7 +469,7 @@
 		font-size:2.1vw;
 	}
 }
-
+*/
 /*****projects*****/
 #proj{
 	//display:flex;
@@ -610,9 +618,10 @@ a:hover{
 		font-size:2.4vw;
 	}
 }
-
+/*
 @media  (max-width: 830px){
 	.contact-available{
 		font-size:2.4vw;
 	}
 }
+*/
