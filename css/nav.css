@@ -44,7 +44,20 @@
 	font-family: 'Inconsolata', monospace;
 }
 
-@media(max-width: 500px){
+@media  only screen and(max-width: 500px){
+	.wrap{
+		flex-wrap: wrap!important;
+	}
+	.circle{
+		width:33vw;
+		height:33vw;
+		line-height:33vw;
+	}
+	.wrap a{
+		font-size:5.3vw!important;
+	}
+}
+@media  (max-width: 500px){
 	.wrap{
 		flex-wrap: wrap!important;
 	}
