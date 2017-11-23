@@ -20,8 +20,8 @@
 .name3{
 	display:none;
 }
-
-@media  all and  (max-width: 830px){
+@media all and (max-aspect-ratio: 1/1){
+/*@media  all and  (max-width: 830px){*/
 	.name1{
 		display:none;
 	}
@@ -32,8 +32,8 @@
 		display:none;
 	}
 }
-
-@media  all and (max-width: 600px){
+@media all and (max-aspect-ratio: 2/3){
+/*@media  all and (max-width: 600px){*/
 	.name1{
 		display:none;
 	}
@@ -45,8 +45,8 @@
 	}
 }
 
-
-@media all and  (max-width: 450px){
+@media all and (max-aspect-ratio: 1/2){
+/*@media all and  (max-width: 450px){*/
 	.name1{
 		display:none;
 	}
@@ -211,8 +211,8 @@
 	font-size:1.5vw;
 	
 }
-
-@media  all and (max-width: 830px){
+@media all and (max-aspect-ratio: 1/1){
+/*@media  all and (max-width: 830px){*/
 	.ab-des{
 		font-size:2.7vw;	
 	}
@@ -232,8 +232,8 @@
 	transform: translateX(-5vw);
 	transition:all 1s;
 }
-
-@media all and  (max-width: 830px){
+@media all and (max-aspect-ratio: 1/1){
+/*@media all and  (max-width: 830px){*/
 	.dropdown{
 		display:block;
 	}
@@ -303,8 +303,8 @@
 .exp-content h5{
 	margin-left:3vw;
 }
-
-@media  all and (max-width: 450px){
+@media all and (max-aspect-ratio: 1/1){
+/*@media  all and (max-width: 450px){*/
 	.exp-co{
 		height:30vh;
 		
@@ -320,8 +320,8 @@
 	}
 }
 
-
-@media  all and  (max-width: 830px){
+@media all and (max-aspect-ratio: 1/1){
+/*@media  all and  (max-width: 830px){*/
 	.proj{
 		width:90vw !important;
 		heigh:auto;
@@ -493,8 +493,8 @@ a:hover{
 	font-size:1.3vw;
 }
 
-
-@media   all and (max-width: 830px){
+@media all and (max-aspect-ratio: 1/1){
+/*@media   all and (max-width: 830px){*/
 	.contact-available{
 		font-size:2.4vw;
 	}
