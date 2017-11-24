@@ -106,7 +106,7 @@ $(document).ready(function(){
 			setTimeout(margin_back,1000);
 	}
 	$(window).resize(function(){
-		
+		console.log($(window).width()/$(window).height());
 		maxH("#store");
 		maxH("#sysManager");
 		maxH("#cdTree");
