@@ -48,6 +48,27 @@
 		blink-creat .75s step-end infinite;	
 }
 
+@media all and (max-aspect-ratio: 4/3){
+	.sentence1{
+		font-size:1em;
+	}
+	.sentence2{
+		font-size:1em;
+	}
+	.sentence3{
+		font-size:1em;
+	}
+
+	.typecontainer{
+		width: 11em !important;
+	}
+	.s2wrapper{
+		width:8.5em;
+	}
+	.s3wrapper{
+		width:15em;
+	}
+}
 
 @keyframes typing{
 	0% {width: 0}

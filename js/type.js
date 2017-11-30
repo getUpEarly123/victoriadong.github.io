@@ -29,7 +29,11 @@ $(document).ready(function(){
 	
 	setTimeout(function(){
 		$(".sentence").text("I love coding and have a great passion");
-		$(".typecontainer").width('40em');
+		if ($(window).width()/$(window).height() <4/3){
+			$(".typecontainer").css('cssText','width : 20em !important');
+		}else{
+			$(".typecontainer").width('40em');
+		}
 		setTimeout(function(){
 			$(".typecontainer > div").removeClass("sentence");
 			//$(".typecontainer").css("margin-top","-=4ex");

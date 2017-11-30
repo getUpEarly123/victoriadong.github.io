@@ -58,31 +58,7 @@
 	}
 }
 
-/*@media all and (max-aspect-ratio: 6/5){
-/*@media  all and (max-width: 830px){
-	.name1{
-		display:none;
-	}
-	.name2{
-		display:none;
-	}
-	.name3{
-		display:none;
-	}
-}*/
-/*@media all and (max-aspect-ratio: 1/1){
-/*@media all and  (max-width: 450px){
-	.name1{
-		display:none;
-	}
-	.name2{
-		display:none;
-	}
-	.name3{
-		display:none;
-	}
 
-}*/
 
 /**nav **************/
 .navbar{
@@ -127,6 +103,7 @@
 	height:2.5em;
 	border-radius: 0.3em;
 }
+
 .navbar-nav>li >a:hover,.navbar-nav>li >a:focus{
 	opacity:0.7;
 	filter:grayscale(50%);
@@ -141,10 +118,10 @@
 	opacity:0.6;
 }
 .burger-wrapper{
-	width:7vw;
-	height:7vw;
+	width:5vw;
+	height:5vw;
 	border-radius:50%;
-	border-width:.5vw;
+	border-width:.4vw;
 	border-style:solid;//important
 	border-color:black;
 	text-align:center;
@@ -182,10 +159,15 @@
 	text-decoration:none;
 }
 
-
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.collapse.in{
+    display:block !important;
+}
 
 /*4/3*/
-@media all and (max-aspect-ratio:9/5){
+/*@media all and (max-aspect-ratio:9/5){
 	#hamburger{
 		display:block;
 	}
@@ -195,11 +177,37 @@
 	.dropdown{
 		font-size:2vw;
 	}
-}
-@media all and (max-aspect-ratio:4/3){
-
+}*/
+@media all and (max-aspect-ratio:5/3){
+	#hamburger{
+		display:block;
+	}
+	#navbar-wide{
+		display:none;
+	}	
 	.dropdown{
 		font-size:3vw;
+	}
+
+}
+@media all and (max-aspect-ratio:4/3){
+	.burger-wrapper{
+		width:7vw;
+		height:7vw;
+
+		border-width:.5vw;
+
+		font-size:1.6em;
+	}
+}
+@media all and (max-aspect-ratio:1/1){
+	.burger-wrapper{
+		width:10vw;
+		height:10vw;
+
+		border-width:.8vw;
+
+		font-size:2.3em;
 	}
 }
 .content{
@@ -340,7 +348,7 @@
 	margin-left:3vw;
 }
 
-@media all and (max-aspect-ratio: 2/3){
+@media all and (max-aspect-ratio: 3/4){
 /*@media  all and (max-width: 450px){*/
 	.exp-co{
 		height:45vh;
@@ -360,7 +368,7 @@
 @media all and (max-aspect-ratio: 4/3){
 /*@media  all and  (max-width: 830px){*/
 	.proj{
-		width:90vw !important;
+		width:85vw !important;
 		heigh:auto;
 		flex-flow:column wrap !important;
 	}
@@ -371,19 +379,19 @@
 		width:100%;
 	}
 	.exp-co{
-		height:45vh;
+		height:40vh;
 		
 	}
 	.exp-time{
-		font-size:2.2w;
+		font-size:2.5w!important;
 		width:10vw;
 	}
 	.exp-content{
 		width:70vw;
-		font-size:2.2vw;
+		font-size:2.4vw;
 	}
 	.exp-des{
-		font-size:2.2vw;
+		font-size:2.4vw;
 	}
 }
 
