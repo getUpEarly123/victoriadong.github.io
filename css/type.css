@@ -49,7 +49,7 @@
 }
 
 @media all and (max-aspect-ratio: 4/3){
-	.sentence1{
+	/*.sentence1{
 		font-size:1em;
 	}
 	.sentence2{
@@ -67,6 +67,9 @@
 	}
 	.s3wrapper{
 		width:15em;
+	}*/
+	.sentence{
+		display:none;
 	}
 }
 

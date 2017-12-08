@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var onpage=0;
 	
 	//$(".dog").css("display","none");
+	if ($(window).width()/$(window).height() >4/3){
 	setTimeout(function(){
 		console.log("type ended");
 		$("#main-type").css("display","none");
@@ -10,6 +11,13 @@ $(document).ready(function(){
 		$("#main-nav").css("display","block");
 		createDog();
 	},10100);
+	}else {
+		console.log("type canceled");
+		$("#main-type").css("display","none");
+		$(".container").removeClass("container").addClass("container-fluid");
+		$("#main-nav").css("display","block");
+		createDog();
+	}
 	/******* main-nav ****************/ 
 	//console.log($("#main-page").css("display"));
 	$(".c1").click(function(){
@@ -140,8 +148,8 @@ $(document).ready(function(){
 			console.log($("#chat-body").css("display"));
 			$("#chat-body").css("display","none");	
 			$(".chat-x").css("display","inline-block");
-			$(".proj-video").css("margin-left","10em");
-			$(".proj-video").css("margin-right","10em");
+			//$(".proj-video").css("margin-left","10em");
+			//$(".proj-video").css("margin-right","10em");
 		}
 	}
 	$(".chat-x").click(function(){

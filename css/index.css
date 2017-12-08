@@ -429,6 +429,14 @@
 	overflow:hidden;
 	position:relative;
 }
+.proj-video{
+	width:100%;
+	height:auto;
+	margin-right:2em;
+	display:flex;
+	overflow:hidden;
+	position:relative;
+}
 
 .proj-left-s{
 	width:40%;
@@ -456,7 +464,7 @@
 	display:none;
 }
 a:hover{
-	text-decoration: none;/*doesn't seem to work...*/
+	text-decoration: none!important;/*doesn't seem to work...*/
 }
 
 .proj-left .carousel{
@@ -471,6 +479,22 @@ a:hover{
 	border-color: Gainsboro  !important;
 }
 
+.chat-left{
+	display:flex;
+	flex-direction:column;
+}
+.chatlink img{
+	width:3em;
+	height: 2em;
+}
+.chatlink{
+	margin-top:2vh;
+	
+}
+.chatlink a{
+	text-decoration:none!important;
+	color:black;
+}
 /* Thumbnail like proj 
 .proj{
 	width: 25vw;

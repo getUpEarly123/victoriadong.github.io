@@ -26,7 +26,8 @@ $(document).ready(function(){
 	$(".typewriter h1").playKeyframe([
 		'typing 1s steps(30,end)'		
 	]);*/
-	
+	if ($(window).width()/$(window).height() >4/3){
+		console.log("called?");
 	setTimeout(function(){
 		$(".sentence").text("I love coding and have a great passion");
 		if ($(window).width()/$(window).height() <4/3){
@@ -51,4 +52,6 @@ $(document).ready(function(){
 		},2500);
 		
 	},2500);
+	
+	}
 });
